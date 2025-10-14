@@ -32,15 +32,17 @@ PUT	/livros/{id}	Atualizar um livro existente
 DELETE	/livros/{id}	Deletar um livro pelo ID
 ---
 📝 Exemplo de JSON (POST / PUT)
-`{
-  "titulo": "O Hobbit",
-  "qtdPaginas": 310,
-  "publicacao": {
-    "autor": "J.R.R. Tolkien",
-    "dataPublicacao": "1937-09-21",
-    "editora": "HarperCollins"
-  }
-}`
+```json
+{
+"titulo": "O Hobbit",
+"qtdPaginas": 310,
+"publicacao": {
+"autor": "J.R.R. Tolkien",
+"dataPublicacao": "1937-09-21",
+"editora": "HarperCollins"
+}
+}
+```
 ---
 🚀 Como Rodar
 
