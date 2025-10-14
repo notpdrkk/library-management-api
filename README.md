@@ -2,7 +2,6 @@
 --- 
 Sistema backend RESTful desenvolvido com Spring Boot para gerenciar livros e suas informações de publicação em uma biblioteca.
 Fornece operações completas de CRUD com validação de dados e tratamento de exceções, garantindo consistência para o frontend.
-
 ---
 ✨ Funcionalidades
 
@@ -13,7 +12,7 @@ Validação de campos obrigatórios usando Jakarta Validation.
 Tratamento global de erros com respostas estruturadas (ControllerExceptionHandler).
 
 Banco de dados em memória H2 para testes rápidos.
-
+---
 🛠 Tecnologias
 - Java 17+
 - Spring Boot 3
@@ -22,7 +21,7 @@ Banco de dados em memória H2 para testes rápidos.
 - H2 Database
 - Spring Boot DevTools
 - Jakarta Validation
-
+---
 🔗 Endpoints
 Método	Endpoint	Descrição
 
@@ -31,7 +30,7 @@ GET	/livros/{id}	Obter um livro pelo ID
 POST	/livros	Criar um novo livro
 PUT	/livros/{id}	Atualizar um livro existente
 DELETE	/livros/{id}	Deletar um livro pelo ID
-
+---
 📝 Exemplo de JSON (POST / PUT)
 `{
   "titulo": "O Hobbit",
@@ -42,7 +41,7 @@ DELETE	/livros/{id}	Deletar um livro pelo ID
     "editora": "HarperCollins"
   }
 }`
-
+---
 🚀 Como Rodar
 
 Clone o repositório:
@@ -60,7 +59,7 @@ LibraryManagementApiApplication.java
 Acesse a API em: http://localhost:8080/livros.
 
 O console do H2 está disponível em: http://localhost:8080/h2-console.
-
+---
 ⚠ Observações
 
 Todos os campos obrigatórios possuem validações; erros retornam respostas estruturadas para facilitar o frontend.
