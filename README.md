@@ -41,7 +41,6 @@ DELETE	/livros/{id}	Deletar um livro pelo ID
 "dataPublicacao": "1937-09-21",
 "editora": "HarperCollins"
 }
-}
 ```
 ---
 🚀 Como Rodar
