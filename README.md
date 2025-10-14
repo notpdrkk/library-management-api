@@ -23,13 +23,14 @@ Banco de dados em memória H2 para testes rápidos.
 - Jakarta Validation
 ---
 🔗 Endpoints
-Método	Endpoint	Descrição
+| Método | Endpoint       | Descrição                  |
+|--------|----------------|----------------------------|
+| GET    | /livros        | Listar todos os livros     |
+| GET    | /livros/{id}   | Obter um livro pelo ID     |
+| POST   | /livros        | Criar um novo livro        |
+| PUT    | /livros/{id}   | Atualizar um livro existente |
+| DELETE | /livros/{id}   | Deletar um livro pelo ID   |
 
-GET	/livros	Listar todos os livros
-GET	/livros/{id}	Obter um livro pelo ID
-POST	/livros	Criar um novo livro
-PUT	/livros/{id}	Atualizar um livro existente
-DELETE	/livros/{id}	Deletar um livro pelo ID
 ---
 📝 Exemplo de JSON (POST / PUT)
 ```json
