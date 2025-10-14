@@ -1,19 +1,19 @@
-A Library Management API é um sistema backend RESTful desenvolvido com Spring Boot, destinado a gerenciar livros e suas informações de publicação em uma biblioteca.
-O projeto fornece operações completas de CRUD (Criar, Ler, Atualizar, Deletar) para gerenciar registros de livros, com validação e tratamento de exceções para garantir a integridade dos dados e uma experiência consistente para o frontend.
+📚 Library Management API
 
-Funcionalidades
+Sistema backend RESTful desenvolvido com Spring Boot para gerenciar livros e suas informações de publicação em uma biblioteca.
+Fornece operações completas de CRUD com validação de dados e tratamento de exceções, garantindo consistência para o frontend.
 
-Gerenciamento de livros com título, quantidade de páginas e informações de publicação (autor, editora e data de publicação).
+✨ Funcionalidades
 
-Validação de entrada usando Bean Validation (Jakarta Validation).
+CRUD completo para livros e suas informações de publicação.
 
-Tratamento global de exceções com ControllerExceptionHandler e respostas de erro estruturadas.
+Validação de campos obrigatórios usando Jakarta Validation.
 
-Banco de dados em memória H2 para testes e desenvolvimento rápido.
+Tratamento global de erros com respostas estruturadas (ControllerExceptionHandler).
 
-Desenvolvido com Spring Boot, Spring Data JPA e Spring Validation.
+Banco de dados em memória H2 para testes rápidos.
 
-Tecnologias Utilizadas
+🛠 Tecnologias
 
 Java 17+
 
@@ -29,14 +29,14 @@ Spring Boot DevTools
 
 Jakarta Validation
 
-Endpoints
+🔗 Endpoints
 Método	Endpoint	Descrição
-GET	/livros	Retorna todos os livros
-GET	/livros/{id}	Retorna um livro pelo ID
-POST	/livros	Cria um novo livro
-PUT	/livros/{id}	Atualiza um livro existente
-DELETE	/livros/{id}	Deleta um livro pelo ID
-Exemplo de JSON (POST / PUT)
+GET	/livros	Listar todos os livros
+GET	/livros/{id}	Obter um livro pelo ID
+POST	/livros	Criar um novo livro
+PUT	/livros/{id}	Atualizar um livro existente
+DELETE	/livros/{id}	Deletar um livro pelo ID
+📝 Exemplo de JSON (POST / PUT)
 {
   "titulo": "O Hobbit",
   "qtdPaginas": 310,
@@ -47,7 +47,7 @@ Exemplo de JSON (POST / PUT)
   }
 }
 
-Como Rodar o Projeto
+🚀 Como Rodar
 
 Clone o repositório:
 
@@ -56,12 +56,17 @@ git clone https://github.com/seuusuario/library-management-api.git
 
 Abra o projeto no Eclipse ou IntelliJ IDEA.
 
-Execute a classe principal LibraryManagementApiApplication.java.
+Execute a classe principal:
+
+LibraryManagementApiApplication.java
+
 
 Acesse a API em: http://localhost:8080/livros.
 
-Observações
+O console do H2 está disponível em: http://localhost:8080/h2-console.
 
-Todos os campos obrigatórios possuem validações e, caso haja erro, a API retorna respostas estruturadas de erro para facilitar a comunicação com o frontend.
+⚠ Observações
 
-O banco H2 é inicializado automaticamente e pode ser acessado pelo console em: http://localhost:8080/h2-console.
+Todos os campos obrigatórios possuem validações; erros retornam respostas estruturadas para facilitar o frontend.
+
+Banco H2 é inicializado automaticamente em memória, ideal para desenvolvimento e testes rápidos
