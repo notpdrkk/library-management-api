@@ -14,23 +14,17 @@ Tratamento global de erros com respostas estruturadas (ControllerExceptionHandle
 Banco de dados em memória H2 para testes rápidos.
 
 🛠 Tecnologias
-
-Java 17+
-
-Spring Boot 3
-
-Spring Web
-
-Spring Data JPA
-
-H2 Database
-
-Spring Boot DevTools
-
-Jakarta Validation
+- Java 17+
+- Spring Boot 3
+- Spring Web
+- Spring Data JPA
+- H2 Database
+- Spring Boot DevTools
+- Jakarta Validation
 
 🔗 Endpoints
 Método	Endpoint	Descrição
+
 GET	/livros	Listar todos os livros
 GET	/livros/{id}	Obter um livro pelo ID
 POST	/livros	Criar um novo livro
