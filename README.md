@@ -1,6 +1,6 @@
 📚 Library Management API
 --- 
-Sistema backend RESTful desenvolvido com Spring Boot para gerenciar livros e suas informações de publicação em uma biblioteca.
+Sistema backend RESTful desenvolvido com Spring Boot para gerenciar livros e suas informações de publicação em uma biblioteca.  
 Fornece operações completas de CRUD com validação de dados e tratamento de exceções, garantindo consistência para o frontend.
 ---
 ✨ Funcionalidades
